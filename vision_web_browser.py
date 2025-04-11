@@ -39,7 +39,7 @@ def parse_arguments():
     parser.add_argument(
         "--model-id",
         type=str,
-        default="gpt-4o",
+        default="gemini/gemini-2.0-flash",
         help="The model ID to use for the specified model type",
     )
     return parser.parse_args()
@@ -199,7 +199,6 @@ def main():
     agent = initialize_agent(model)
 
     # Run the agent with the provided prompt
-    # agent.python_executor("from helium import *", agent.state)
     agent.python_executor("from helium import *")
     agent.run(args.prompt + helium_instructions)
 

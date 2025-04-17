@@ -1,3 +1,4 @@
 .env
 .venv/
 alfred_chroma_db/
+gemma-2-2B-it-thinking-function_calling-V0/

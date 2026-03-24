@@ -33,13 +33,13 @@ def parse_arguments():
     parser.add_argument(
         "--model-type",
         type=str,
-        default="LiteLLMModel",
-        help="The model type to use (e.g., OpenAIServerModel, LiteLLMModel, TransformersModel, HfApiModel)",
+        default="OpenAIServerModel",
+        help="The model type to use (e.g., OpenAIServerModel, TransformersModel, HfApiModel)",
     )
     parser.add_argument(
         "--model-id",
         type=str,
-        default="gemini/gemini-2.0-flash",
+        default="gpt-4o",
         help="The model ID to use for the specified model type",
     )
     return parser.parse_args()
